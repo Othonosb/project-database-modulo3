@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  margin-top: 3%;
+}
+
+.margin {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font {
+  font-weight: 500;
+  font-size: 40px;
+  
+}
+
+.teste {
+  background-color: rgb(199, 194, 194);
+  text-align: justify;
+}
+
+ul{
+  cursor: pointer;
+}
