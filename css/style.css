@@ -1513,6 +1513,10 @@ a:focus, a:hover {
   .counters-item:before {
     display: none;
   }
+  #page-grafic {
+    width: 450px;
+    height: 450px;
+  }
   /* parallax section */
   .parallax-section {
     background-position: center top !important;
