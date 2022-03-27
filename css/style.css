@@ -1707,6 +1707,15 @@ a:focus, a:hover {
     text-align: center;
     margin-bottom: 20px;
   }
+  #position-center{
+    margin-left: 80px;
+  }
+  #position{
+    margin-left: 60px;
+  }
+  #position-2{
+    margin-left: 20px;
+  }
 }
 
 
