@@ -7,6 +7,9 @@
     });
   });
 
+  let audio = $("myaudio");
+  audio.volume = 0.2;
+
   
   //Hero Slider
   $('.hero-slider').slick({
@@ -35,8 +38,10 @@
   });
 
 
+  /*
   $(window).scroll(function () {
     counter();
   });
+  */
 
 })(jQuery);
