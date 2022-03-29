@@ -1,225 +1,277 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/f1_formula1_6832.ico"
+    />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Database | Fórmula 1</title>
+  </head>
 
-<head>
+  <body id="body">
+    <div id="preloader">
+      <div class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <header class="navigation fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand logo" href="index.html">
+            <img class="logo" width="80px" src="images/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="images/f1_formula1_6832.ico" />
-	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="plugins/slick/slick.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="js/script.js" defer></script>
-	<title>Database | Fórmula 1</title>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav ml-auto text-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="colaboradores.html">Colaboradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="senna.html">Senna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="diagramas.html">Diagramas</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-</head>
-
-<body id="body">
-
-	<div id="preloader">
-		<div class='preloader'>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</div>
-	<header class="navigation fixed-top">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand logo" href="index.html">
-					<img class="logo" width="80px" src="images/logo.png" alt="logo" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-					aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navigation">
-					<ul class="navbar-nav ml-auto text-center">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">Sobre</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="colaboradores.html">Colaboradores</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="senna.html">Senna</a>
-						</li>
-						<li class="nav-item ">
-							<a class="nav-link" href="diagramas.html">Diagramas</a>
-						</li>
-				
-
-					</ul>
-				</div>
-			</nav>
-		</div>
-	</header>
-
-	<div class="hero-slider">
-		<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/car4.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Database Fórmula
-							1<br>
-						</h1>
-						<p data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Nossa base de dados possui informações atualizadas de 1950 até o presente momento.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/car5.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1" id="h1-size">A Fórmula 1 é
-							considerada a categoria mais importante do automobilismo mundial.
-							</h1>
-							<!--<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">
+    <div class="hero-slider">
+      <div
+        class="slider-item th-fullpage hero-area"
+        style="background-image: url(images/slider/car4.jpg)"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1
+                data-duration-in=".3"
+                data-animation-in="fadeInUp"
+                data-delay-in=".1"
+              >
+                Database Fórmula 1<br />
+              </h1>
+              <p
+                data-duration-in=".3"
+                data-animation-in="fadeInUp"
+                data-delay-in=".5"
+              >
+                Nossa base de dados possui informações atualizadas de 1950 até o
+                presente momento.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slider-item th-fullpage hero-area"
+        style="background-image: url(images/slider/car5.jpg)"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1
+                data-duration-in=".3"
+                data-animation-in="fadeInDown"
+                data-delay-in=".1"
+                id="h1-size"
+              >
+                A Fórmula 1 é considerada a categoria mais importante do
+                automobilismo mundial.
+              </h1>
+              <!--<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">
 								amet, consectetur adipisicing elit.
 								<br></p>-->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider/car3.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Confira nossos
-							<br>dados</h1>
-						<p data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".5">Reunimos as principais informações para quem tem curiosidade!							
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="slider-item th-fullpage hero-area"
+        style="background-image: url(images/slider/car3.jpg)"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1
+                data-duration-in=".3"
+                data-animation-in="fadeInDown"
+                data-delay-in=".1"
+              >
+                Confira nossos <br />dados
+              </h1>
+              <p
+                data-duration-in=".3"
+                data-animation-in="fadeInDown"
+                data-delay-in=".5"
+              >
+                Reunimos as principais informações para quem tem curiosidade!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	</div>
+    <section class="service-2 section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title text-center">
+              <h2>Sobre</h2>
+              <p>
+                A Fórmula 1 é considerada a categoria mais importante do
+                automobilismo mundial. Oficialmente, a Fórmula 1 foi criada em
+                1950 pela Federação Internacional de Automobilismo (FIA). As
+                temporadas entre 2001 e 2010 foram marcadas pelo desenvolvimento
+                dos motores, o que resultou nas maiores velocidades registradas
+                na F1. Confira os gráficos abaixo:
+              </p>
 
-	<section class="service-2 section">
-		<div class="container">
-			<div class="row">
+              <div class="border"></div>
+            </div>
+          </div>
 
-				<div class="col-12">
-					<div class="title text-center">
-						<h2>Sobre</h2>
-						<p>A Fórmula 1 é considerada a categoria mais importante do automobilismo mundial. Oficialmente,
-							a Fórmula 1 foi criada em 1950 pela Federação Internacional de Automobilismo (FIA). As
-							temporadas entre 2001 e 2010 foram marcadas pelo desenvolvimento dos motores, o que resultou
-							nas maiores velocidades registradas na F1. Confira os gráficos abaixo:</p>
+          <div class="col-md-4 text-center"></div>
+          <div class="col-md-12">
+            <div class="row text-center">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                  <img src="images/top10_pilotos.png" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                  <img src="images/Presenca_br.png" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                  <img src="images/Vitoria_pais.png" class="img-fluid" />
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="service-item">
+                  <img src="images/Construtores.png" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="about-2 section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              id="img-border"
+              src="./images/img-cards.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <ul class="checklist">
+              <h2 id="position">Principais estatísticas</h2>
+              <h5 class="white">
+                Quais países possuem mais pilotos na Formula 1 ?
+              </h5>
+              <h5 class="white">
+                Qual a relação entre começar a corrida na pole position e
+                vencê-la ?
+              </h5>
+              <h5 class="white">Quais países possuem mais pilotos ?</h5>
+            </ul>
+            <a
+              href="#page-grafic"
+              class="btn btn-main mt-20"
+              id="position-center"
+              >confira dados</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-						<div class="border"></div>
-					</div>
-				</div>
+    <section class="service-2 section" id="page-grafic">
+      <div class="d-flex flex-row justify-content-center w-100">
+        <iframe
+          class="mt-2"
+          width="1200px"
+          height="700px"
+          title="Pilotos"
+          src="https://app.powerbi.com/view?r=eyJrIjoiMTg4MWFkYTgtZWRkZC00NTY2LTk3MDEtNzVjYzQ3MTYxODYwIiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+      <div class="d-flex flex-row justify-content-center w-100">
+        <iframe
+          class="mt-2"
+          width="1200px"
+          height="700px"
+          title="Graficos"
+          src="https://app.powerbi.com/view?r=eyJrIjoiM2MwMTMyOWQtMDU0OC00NDc0LTgyMzgtYWRlYTYwN2M5ODhmIiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+      <div class="d-flex flex-row justify-content-center w-100">
+        <iframe
+          class="mt-2"
+          width="1200px"
+          height="700px"
+          title="Variados"
+          src="https://app.powerbi.com/view?r=eyJrIjoiOTU0YTgwZmItZTYxNC00MDU4LWI3MGYtOGU1N2ZmNmQ0YTE4IiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"
+          frameborder="0"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+    </section>
 
-				<div class="col-md-4 text-center">
+    <footer id="footer" class="bg-one">
+      <div class="footer-bottom">
+        <h5>Copyright 2022.</h5>
+        <h6>
+          Projeto desenvolvido por G3 |
+          <a href="https://www.resilia.com.br/">Resilia Educação </a>
+        </h6>
+      </div>
+    </footer>
 
-				</div>
-				<div class="col-md-12">
-					<div class="row text-center">
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="service-item">
-								<img src="images/top10_pilotos.png" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="service-item">
-								<img src="images/Presenca_br.png" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="service-item">
-								<img src="images/Vitoria_pais.png" class="img-fluid">
-							</div>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12">
-							<div class="service-item">
-								<img src="images/Construtores.png" class="img-fluid">
-							</div>
-						</div>
-						
-					</div>
-				</div>
-			</div> 
-		</div> 
-	</section> 
-
-	<section class="about-2 section" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<img id="img-border" src="./images/img-cards.svg" class="img-fluid" alt="">
-				</div>
-				<div class="col-md-6">
-					<ul class="checklist">
-						<h2 id="position">Principais estatísticas</h2>
-						<h5 class="white">Quais países possuem mais pilotos na Formula 1 ?</h5>
-						<h5 class="white">Qual a relação entre começar a corrida na pole position e vencê-la ?</h5>
-						<h5 class="white">Quais países possuem mais pilotos ?</h5>
-					</ul>
-					<a href="#page-grafic" class="btn btn-main mt-20" id="position-center">confira dados</a>
-				</div>
-			</div> 
-		</div> 
-	</section> 
-
-
-
-		<section class="service-2 section" id="page-grafic">
-			<div class="d-flex flex-row justify-content-center w-100">
-				<iframe
-				  class="mt-2"
-				  width="1200px"
-				  height="700px"
-				  title="Pilotos"
-				  src="https://app.powerbi.com/view?r=eyJrIjoiMTg4MWFkYTgtZWRkZC00NTY2LTk3MDEtNzVjYzQ3MTYxODYwIiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"
-				  frameborder="0"
-				  allowfullscreen="true"
-				></iframe>
-			  </div>
-			  <div class="d-flex flex-row justify-content-center w-100">
-				<iframe
-				  class="mt-2"
-				  width="1200px"
-				  height="700px"
-				  title="Graficos"
-				  src="https://app.powerbi.com/view?r=eyJrIjoiOWUxZWJkN2ItMTE0ZS00NzBiLThhOGMtYTgzMTE2NDQzNDlkIiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"
-				  frameborder="0"
-				  allowfullscreen="true"
-				></iframe>
-			  </div>
-			  <div class="d-flex flex-row justify-content-center w-100">
-				<iframe
-				  class="mt-2"
-				  width="1200px"
-				  height="700px"
-				  title="Variados"
-				  src="https://app.powerbi.com/view?r=eyJrIjoiOTU0YTgwZmItZTYxNC00MDU4LWI3MGYtOGU1N2ZmNmQ0YTE4IiwidCI6ImFlZjIxZTExLWNjODgtNGFlZS04OTIxLWRlNWYwOTA5ZGQ3NCJ9&pageName=ReportSection"			
-				  frameborder="0"
-				  allowfullscreen="true"
-				></iframe>
-			  </div>
-		</section> 
-
-		<footer id="footer" class="bg-one">
-			<div class="footer-bottom">
-			  <h5>Copyright 2022.</h5>
-			  <h6>Projeto desenvolvido por G3 | <a href="https://www.resilia.com.br/">Resilia Educação </a></h6>
-			</div>
-
-		  </footer> 
-				  
-	<script src="plugins/jquery/jquery.min.js"></script>
-	<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-	<script src="plugins/slick/slick.min.js"></script>
-
-</body>
-
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+  </body>
 </html>
